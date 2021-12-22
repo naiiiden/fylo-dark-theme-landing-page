@@ -40,7 +40,6 @@ img {
 }
 
 header {
-  background-color: #202a3c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,6 +50,9 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 1.5rem 1rem;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
 }
 
 header .logo {
@@ -58,12 +60,22 @@ header .logo {
 }
 
 header nav {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-  font-family: Raleway, sans-serif;
-  font-weight: 400;
 }
 
 header nav a {
@@ -86,11 +98,12 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.5rem;
+  padding-top: 5rem;
 }
 
 main img {
   z-index: 1;
-  padding: 0 2rem;
+  padding: 1.5rem 2rem 0 2rem;
   background-color: #202a3c;
 }
 
@@ -972,6 +985,16 @@ img {
     display: -ms-flexbox;
     display: flex;
     gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    background-color: #202a3c;
+    padding: .5rem 1rem;
+  }
+  main {
+    padding-top: 2.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,21 +1,30 @@
 @import "./general";
 
 header {
-    background-color: $dark-blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 1rem;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
 
     .logo {
         width: 30%;
     }
 
     nav {
-        display: flex;
-        gap: 1rem;
         font-family: Raleway, sans-serif;
         font-weight: 400;
+        display: flex;
+        align-items: center;
+
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+        }
 
         a {
             color: $white;
@@ -34,10 +43,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding-top: 5rem;
 
     img {
         z-index: 1;
-        padding: 0 2rem;
+        padding: 1.5rem 2rem 0 2rem;
         background-color: $dark-blue;
     }
 

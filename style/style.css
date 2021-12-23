@@ -646,6 +646,9 @@ img {
         flex-wrap: wrap;
   }
   header .hamburger {
+    position: fixed;
+    right: 1rem;
+    top: 1.45rem;
     z-index: 100;
     display: block;
     cursor: pointer;
@@ -660,7 +663,7 @@ img {
   header .nav-ul {
     -webkit-backdrop-filter: blur(1rem);
             backdrop-filter: blur(1rem);
-    position: absolute;
+    position: fixed;
     height: 100vh;
     top: 0;
     left: 0;

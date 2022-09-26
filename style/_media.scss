@@ -1,13 +1,13 @@
 @import "./general";
 @media screen and (min-width: 375px) {
-    main{
+    .main{
         .curve {
             bottom: 7.8rem;
         }
     }
 }
 @media screen and (min-width: 425px) {
-    main{
+    .main{
         .curve {
             bottom: 6.65rem;
         }
@@ -26,7 +26,7 @@
         }
     }   
 
-    main {
+    .main {
         background-color: $dark-blue;
 
         img {
